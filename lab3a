@@ -1,0 +1,27 @@
+
+//Class: CSE 1321L
+//Section: E04
+//Term: Spring 2023
+//Instructor: Professor Eun Sik Kim
+//Name: Marco Tello
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main()
+{
+
+  double AO, APR, MPR, MP;
+  cout << "Amount owed: $";
+  cin >> AO;
+  cout << "APR: ";
+  cin >> APR;
+  MPR = APR / 12;
+  MP = (AO * APR / 12) / 100;
+  cout << "Monthly percentage rate: " << MPR << endl;
+  cout << "Minimum payment: $" << MP
+    << endl
+    << endl;
+
+}
