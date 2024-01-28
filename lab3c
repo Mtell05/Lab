@@ -1,0 +1,34 @@
+
+//Class: CSE 1321L
+//Section: E04
+//Term: Spring 2023
+//Instructor: Professor Eun Sik Kim
+//Name: Marco Tello
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() 
+{
+  double q, d, n, p, total, dollars, cents;
+  cout << "Enter the number of quarters: ";
+  cin >> q;
+  cout << "Enter the number of dimes: ";
+  cin >> d;
+  cout << "Enter the number of nickels: ";
+  cin >> n;
+  cout << "Enter the number of pennies: ";
+  cin >> p;
+  cout << endl;
+  cout << "You entered " << q << " quarters." << endl;
+  cout << "You entered " << d << " dimes." << endl;
+  cout << "You entered " << n << " nickels." << endl;
+  cout << "You entered " << p << " pennies." << endl;
+  total = (q * 25) + (d * 10) + (n * 5) + (p * 1);
+  dollars = total / 100;
+  cents = total % 100;
+  cout << endl;
+  cout << "Your total is " << dollars << " dollars and " << cents << " cents." << endl;
+  <<endl;
+}
