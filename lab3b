@@ -1,0 +1,46 @@
+
+//Class: CSE 1321L
+//Section: E04
+//Term: Spring 2023
+//Instructor: Professor Eun Sik Kim
+//Name: Marco Tello
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main()
+{
+double c1, gc1, c2, gc2, c3, gc3, c4, gc4, totalHours, totalQuality, g;
+
+  // Input //
+  
+  cout << "Course 1 hours: ";
+  cin >> c1;
+  cout << "Grade for course 1: ";
+  cin >> gc1;
+  cout << "Course 2 hours: ";
+  cin >> c2;
+  cout << "Grade for course 2: ";
+  cin >> gc2;
+  cout << "Course 3 hours: ";
+  cin >> c3;
+  cout << "Grade for course 3: ";
+  cin >> gc3;
+  cout << "Course 4 hours: ";
+  cin >> c4;
+  cout << "Grade for course 4: ";
+  cin >> gc4;
+
+// MATH //
+  
+  totalHours = c1 + c2 + c3 + c4;
+  totalQuality = (c1 * gc1) + (c2 * gc2) + (c3 * gc3) + (c4 * gc4);
+  g = totalQuality / totalHours;
+
+// RESULT //
+  
+  cout << "Total hours is: " << totalHours << endl;
+  cout << "Total quality points is: " << totalQuality << endl;
+  cout << "Your GPA for this semester is " << g << endl << endl;
+ }
